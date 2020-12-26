@@ -1,0 +1,25 @@
+.header-navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+.links-top {
+  font-size: 15px;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.profile-picture {
+  width: 30px;
+  height: 35px;
+  border-radius: 80%;
+}

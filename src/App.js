@@ -1,12 +1,16 @@
 
-import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+import "./css/index.scss";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import Content from "./components/Content";
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Irwin Acosta</h1>
+
+const App = () => (
+  <BrowserRouter>
+    <div>
+      <Content/>
     </div>
-  );
-}
+  </BrowserRouter>
+);
 
 export default App;
