@@ -4,7 +4,7 @@ class Header extends Component {
   render() {
     return (
       <div>
-        <nav className="header-navbar">
+        <nav className="header-navbar-inicio">
           <a href="https://mail.google.com/mail" className="links-top">
             Gmail
           </a>

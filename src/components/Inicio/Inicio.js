@@ -3,7 +3,7 @@ import BodyInicio from './BodyInicio'
 import Footer from './Footer'
 import Header from './Header'
 
-export default function index() {
+export default function Inicio() {
     return (
         <div>
             <Header/>
