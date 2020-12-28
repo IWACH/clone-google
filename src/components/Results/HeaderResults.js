@@ -1,10 +1,10 @@
 import React, { Component } from "react";
+import { isUndefined } from 'lodash'
 
 class HeaderResults extends Component {
   state = {
-    search: "",
+    search: undefined,
   };
-
   changeValue = (e) => {
     const { value, name } = e.target;
     this.setState({
@@ -17,6 +17,7 @@ class HeaderResults extends Component {
     }
   };
   render() {
+    let searchString = isUndefined(this.state.search) ? this.props.searchString : this.state.search;
     return (
       <div>
         <nav className="header-navbar-results">
@@ -38,6 +39,7 @@ class HeaderResults extends Component {
                     className="input is-rounded input-inicio-results"
                     type="text"
                     name="search"
+                    value={searchString}
                     onChange={this.changeValue}
                     onKeyUp={this.enter}
                   />

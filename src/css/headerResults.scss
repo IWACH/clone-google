@@ -5,20 +5,51 @@
   margin-right: 15px;
   margin-top: 25px;
 
-  .navbar-results-left{
+  .navbar-results-left {
     display: flex;
     align-items: flex-start;
     align-items: center;
 
-    .logo-google-results{
+    .logo-google-results {
       margin-left: 30px;
     }
     .buscador-results {
       margin-left: 40px;
+      .buscadorResults {
+        .input-inicio-results {
+          width: 690px;
+          height: 44px;
+          &:hover {
+            box-shadow: 1px 1px 6px darkgray;
+          }
+        }
+
+        .icons-rigtht {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          margin-top: 3px;
+
+          .icon-delete {
+            margin-right: 90px;
+            cursor: pointer;
+          }
+
+          .icon-microfone {
+            margin-right: 60px;
+          }
+
+          .icon-search {
+            margin-right: 10px;
+            color: gray;
+            cursor: pointer;
+          }
+        }
+      }
     }
   }
 
-  .navbar-results-rigth{
+  .navbar-results-rigth {
     display: flex;
     align-items: flex-end;
     align-items: center;

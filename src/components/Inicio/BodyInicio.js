@@ -14,6 +14,12 @@ export default class BodyInicio extends Component {
     });
   };
 
+  enter = (e) => {
+    if (e.keyCode === 13) {
+     return window.location.href = `/search/${this.state.search}`;
+    }
+  };
+
   search = () => {};
   render() {
     return (
@@ -31,7 +37,9 @@ export default class BodyInicio extends Component {
               className="input is-rounded input-inicio"
               type="text"
               name="search"
+              value={this.state.search}
               onChange={this.changeValue}
+              onKeyUp={this.enter}
             />
             <span className="icon is-small is-left">
               <i className="fas fa-search"></i>

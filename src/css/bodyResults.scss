@@ -24,16 +24,21 @@
     flex-direction: column;
 
     .content-card {
-      width: 100%;
       font-family: arial, sans-serif;
       display: flex;
       flex-direction: column;
       margin-bottom: 28px;
+      width: 550px;
     }
 
     .url {
       font-size: 14px;
       color: #202124;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
     }
     .titulo {
       margin-bottom: 5px;

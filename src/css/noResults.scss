@@ -1,0 +1,14 @@
+.noResult-content {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 180px;
+  padding-top: 50px;
+  font-family: arial, sans-serif;
+  color: #202124;
+  .searchString{
+    font-weight: bold;
+  }
+}
