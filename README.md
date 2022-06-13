@@ -1,5 +1,5 @@
-Iniciar DB
+# Iniciar DB
 node server/server
 
-Iniciar el proyecto
+# Iniciar el proyecto
 npm start
