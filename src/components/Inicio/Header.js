@@ -15,11 +15,7 @@ class Header extends Component {
             <i className="fas fa-th"></i>
           </span>
           <a className="navbar-item" href="/">
-            <img
-              className="profile-picture"
-              src="/assets/gk-logo.png"
-              alt="foto de perfil"
-            />
+            <span className="profile-picture">IA</span>
           </a>
         </nav>
       </div>

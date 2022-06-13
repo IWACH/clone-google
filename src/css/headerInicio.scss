@@ -19,7 +19,9 @@
 }
 
 .profile-picture {
-  width: 30px;
-  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
   border-radius: 80%;
 }

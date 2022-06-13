@@ -14,9 +14,8 @@ const getResultById = (req, res) => {
 };
 
 const searchResults = async (req, res) => {
-  console.log(req.params);
   const searchString = req.query.searchString || "";
-  await Result.find({$text: {$search: searchString}}, (err, entities) => {
+  await Result.find({ $text: { $search: searchString } }, (err, entities) => {
     if (err) {
       return res.status(400).json({ success: false, error: err });
     }
