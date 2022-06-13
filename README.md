@@ -2,4 +2,4 @@
 node server/server
 
 # Iniciar el proyecto
-npm start
+npm run start
